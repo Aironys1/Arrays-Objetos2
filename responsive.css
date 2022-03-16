@@ -1,0 +1,49 @@
+@media screen and (max-width:600px){
+    h1{
+        font-size:20px;
+    }
+    p{
+        font-size:16px;
+        margin: 20px;
+        text-align:justify;
+    }
+    .paragrafo{
+        font-size:15px;
+        width: 200px;
+        text-align:center;
+    }
+
+    section{
+        max-width: 370px;
+        margin: 0;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    code{
+      border:0;
+      margin-left: 0;
+    }
+
+    .linha{
+        font-size:15px ;
+    }
+    span{
+        font-size: 17px;
+    }
+
+    .img{
+        width:300px;
+        
+    
+    
+}
+
+@media screen and (min-width:601px) and (max-width:1000px){
+
+    .img{
+        width:100px;
+    }
+    
+}
+    

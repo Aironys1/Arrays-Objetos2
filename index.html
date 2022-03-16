@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Ultilizando Arrays</h1>
+    <p>O que é uma array? Arrays são geralmente descritas como "lista de objetos"; elas são basicamente objetos que contem múltiplos valores armazenados em uma lista.</p>
+    <p>Para visualizar as soluções dos comandos, é só ir no console do pc. </p>
+    <p>Vou colocar aqui os  scripts que estou praticando.</p>
+
+    <section>  
+
+        <code>
+            <p class="paragrafo">Arrays, declarando na mesma linha.</p>
+
+           <span class="linha">
+            let carros=['Ferrari','Palio','Corola','Bmw']; <br>
+            console.log(carros[2]); <br>
+
+           </span>
+           <img class="img" src="img/imgArray.jpeg" alt="">
+
+        </code>
+
+        <code>
+            <p class="paragrafo">Arrays, sendo declarado em bloco, mas o resultado é o mesmo. </p>
+            <span>
+                let produto = [  <br>
+                'Computador', <br>
+                'mouse',      <br>
+                'Teclado',    <br>
+                'Monitor'     <br><br>
+            ]   
+            console.log(produto[2]); 
+            </span>
+           
+        </code>
+
+
+        <code>
+            <p class="paragrafo">Arrays de ingredientes, contendo outro array dentro de uma array. <br> Podemos ter infinitas arrays dentro de um array. </p>
+
+            <span>
+                let ingredientes = [ <br>
+            ['Arroz,', 'Macarrão','Feijão','Café'],<br>
+            ['Agua','Refrigerante','Suco'],<br>
+            'Quantidade', 'Valor','Estoque'<br><br>
+]
+
+            console.log(ingredientes[0]);<br>
+            console.log(ingredientes[1]);<br>
+            console.log(ingredientes[2]);<br>
+            console.log(ingredientes);<br>
+            </span>
+            <img class="img" src="img/img-Array2.png" alt="">
+        </code>
+
+    </section>
+        
+    <section>
+        <h2>Objetos</h2>
+        <code>
+            <span>
+                let carro2 = {  <br>
+                    nome:'Fiat', <br>
+                    modelo: 'Uno', <br>
+                    peso:'800kg', <br>
+                    ligar:function(){ <br>
+                        console.log("Ligando o carro: VRUM VRUM VRUUMMMMMMMM") <br>
+                    }, <br> <br>
+                    acelerar:function(){ <br>
+                        console.log("Hrihhhh") <br>
+                    }
+                }; <br> <br>
+                console.log(carro2); <br>
+                console.log(carro2.nome); <br>
+                console.log(carro2.modelo); <br>
+                console.log(carro2.peso); <br>
+                carro2.ligar(); <br>
+                carro2.acelerar(); <br>
+            </span>
+
+            <img class="img" src="img/obejeto1.png" alt="">
+            
+        </code>
+
+        <code>
+            <span>
+                let carro2 = {   <br>
+                    nome:'Fiat', <br>
+                    modelo: 'Uno', <br>
+                    peso:'800kg', <br>
+                    ligado:false, <br>
+                    ligar:function(){ <br>
+                        this.ligado = true; <br>
+                        console.log("VRUMM VRUMM"); <br>
+                    }, <br> <br>
+                
+                    acelerar:function(){ <br>
+                        if(this.ligado == true){ <br>
+                            console.log("Hriiihhhhh"); <br>
+                        }
+                    }
+                   
+                    } <br> <br>
+                   
+                console.log(carro2); <br>
+                console.log(carro2.nome); <br>
+                console.log(carro2.modelo); <br>
+                console.log(carro2.peso); <br>
+                carro2.ligar(); <br>
+                carro2.acelerar(); <br> <br>
+                
+                let carro3 = { <br> 
+                    nome:'S10 2.8 T.DIESEL LTZ ', <br>
+                    modelo:'CHEVROLET', <br>
+                    valor:125.990, <br>
+                    peso:'990kg', <br>
+                    ligar:function(){<br>
+                        console.log("Estou ligando");<br>
+                    }
+                    
+                
+                }<br><br>
+                
+                console.log(carro3);
+                carro3.ligar();
+            </span>
+            <img class="img" src="img/objeto2.png" alt="">
+        </code>
+    </section>
+
+    <section>
+        <code>
+            <h2>Objetos dentro de Arrays</h2>
+            <span>
+                let carros4 = [ <br>
+            {nome:'Fiat',modelo:'Palio'},<br>
+            {nome:'Fiat',modelo:'Uno'},<br>
+            {nome:'Toyota',modelo:'Corola'},<br>
+            {nome:'Ferrari',modelo:'Corolla'},<br><br>
+    
+        ];
+        console.log(carros4);<br>
+        console.log(carros4[0]);<br>
+        console.log(carros4[1].modelo);<br>
+        console.log(carros4[2].nome);<br>
+        console.log(carros4[3].modelo);<br>
+            </span>
+            <img class="img" src="img/objarrays.png" alt="">
+
+        </code>
+    </section>
+    <script src="java.js"></script>
+</body>
+</html>
